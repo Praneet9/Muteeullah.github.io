@@ -23,7 +23,7 @@
 
     <div class="container">
 
-        <div class="card rounded shadow-lg mt-5 p-2 pl-3" style="background: #424242">
+        <div class="card rounded shadow-lg mt-5 p-2 pl-3" id="terminal_top">
             <div id="console" class="console">
                 <div>
                     <svg width="5%" viewBox="0 0 109 26" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -49,20 +49,22 @@
                 </div>
             </div>
         </div>
-        <div class="card rounded shadow-lg pt-3 pl-3 pb-5" style="background: #424242; color: #eee">
-
-            <div id="terminal_op"></div>
-            <span><label class="mr-2" for="input_command">$ </label><input type="text" name="" value="" id="input_command" style="background: transparent; border:transparent; color: #eee;"></span>
+        <div class="card rounded shadow-lg pt-3 pl-3 pb-5" id="terminal">
+            <div id="terminal_operations"></div>
+            <span>
+                <label class="mr-2 mb-3" for="input_command">$ </label>
+                <input type="text" maxlength="50" id="input_command">
+            </span>
         </div>
+    </div>
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-        <!-- Custom JS -->
-        <script type="text/javascript" src="js/main.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

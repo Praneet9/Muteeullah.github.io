@@ -8,6 +8,37 @@ body {
 
 /********************************** Navbar **********************************/
 
+/********************************** Terminal **********************************/
+
+#terminal_top {
+    background: #424242;
+}
+
+#terminal::-webkit-scrollbar {
+    width: 0 !important
+}
+
+#terminal {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    background: #424242;
+    color: #eee;
+    min-height: 80vh;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#input_command {
+    background: transparent;
+    border: transparent;
+    color: #eee;
+    width: 80%;
+}
+
+#input_command:focus {
+    outline: none;
+}
+
 /********************************** Landing **********************************/
 
 /********************************** Technologies **********************************/
