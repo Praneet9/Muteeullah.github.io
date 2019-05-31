@@ -3,15 +3,58 @@
 /********************************** Global **********************************/
 
 body {
-    background: #F5F5F5
+    background: #323232;
+    overflow-x: hidden;
 }
 
 /********************************** Navbar **********************************/
+
+
+.header {
+    border-bottom: #4c4c4c 1px solid;
+    background-color: transparent;
+    position: fixed;
+    z-index: 555;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 5px 10px;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+}
+
+nav {
+    padding: 15px;
+}
+
+#navbar_links li {
+    padding: 10px
+}
+
+nav li:hover {
+    color: #fff;
+}
+
+nav li a:hover {
+    border: #fff 1px solid;
+}
+
+.links {
+    color: #fff;
+}
+
+.section {
+    min-height: 100vh;
+}
 
 /********************************** Terminal **********************************/
 
 #terminal_top {
     background: #424242;
+    margin-top: 125px;
 }
 
 #terminal::-webkit-scrollbar {

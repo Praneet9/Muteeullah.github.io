@@ -7,8 +7,6 @@ $('#input_command').keypress(function (e) {
         var test = $('#input_command').val()
         $('#input_command').val("")
         $("#terminal_operations").append("<p>" + test + "</p>");
-        console.log(test);
-
     }
 });
 
