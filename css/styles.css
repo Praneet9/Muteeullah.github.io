@@ -5,9 +5,13 @@
 
 /********************************** Global **********************************/
 
+html {
+    background: linear-gradient(90deg, #4c4c4c, #333333);
+}
 
 body {
-    background: #333333;
+    /* background: #333333; */
+    background: linear-gradient(90deg, #4c4c4c, #333333);
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
 }
@@ -103,6 +107,36 @@ nav li a:hover {
     margin-top: 50px;
 }
 
+.tag {
+    padding: 7px;
+    margin: 5px;
+    font-size: 14px;
+    border: solid 1px
+}
+
+.web {
+    border-color: #F9B644;
+    color: #F9B644;
+    background-color: transparent;
+}
+
+.server {
+    border-color: rgb(13, 124, 184);
+    color: rgb(15, 115, 168);
+    background-color: transparent;
+}
+
+.langs {
+    border-color: #EC2A70;
+    color: #EC2A70;
+    background-color: transparent;
+}
+
+.dbs {
+    border-color: #178CCC;
+    color: #178CCC;
+    background-color: transparent;
+}
 /********************************** Projects **********************************/
 
 /********************************** About **********************************/
