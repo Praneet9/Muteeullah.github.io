@@ -5,13 +5,9 @@
 
 /********************************** Global **********************************/
 
-html {
-    background: linear-gradient(90deg, #4c4c4c, #333333);
-}
-
 body {
-    /* background: #333333; */
-    background: linear-gradient(90deg, #4c4c4c, #333333);
+    background: #191919;
+    /* background: linear-gradient(90deg, #4c4c4c, #333333); */
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
 }
@@ -24,13 +20,15 @@ body {
 
 
 .header {
-    border-bottom: #4c4c4c 1px solid;
+    border-bottom: #262626 1px solid;
     background-color: transparent;
     /* position: initial; */
     z-index: 555;
     left: 0px;
     right: 0px;
     top: 0px;
+    margin-right: 0;
+    margin-left: 0;
     padding: 5px 0px 5px 0px;
     transition: all 0.35s;
     -moz-transition: all 0.35s;
@@ -66,7 +64,7 @@ nav li a:hover {
 /********************************** Terminal **********************************/
 
 #terminal_top {
-    background: #404040;
+    background: #262626;
     margin-top: 50px;
 }
 
@@ -77,7 +75,7 @@ nav li a:hover {
 #terminal {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
-    background: #404040;
+    background: #262626;
     color: #eee;
     min-height: 80vh;
     max-height: 80vh;
@@ -107,10 +105,21 @@ nav li a:hover {
     margin-top: 50px;
 }
 
+.skills_card {
+    background: #262626;
+    margin-top: 30px;
+}
+
+.skills_card .card-body {
+    min-height: 140px;
+}
+
 .tag {
     padding: 7px;
     margin: 5px;
+    max-width: fit-content;
     font-size: 14px;
+    float: left;
     border: solid 1px
 }
 
@@ -120,23 +129,42 @@ nav li a:hover {
     background-color: transparent;
 }
 
-.server {
+.servert {
     border-color: rgb(13, 124, 184);
     color: rgb(15, 115, 168);
     background-color: transparent;
 }
 
-.langs {
+.misc {
+    border-color: #ab47bc;
+    color: #ab47bc;
+    background-color: transparent;
+}
+
+.dbs {
     border-color: #EC2A70;
     color: #EC2A70;
     background-color: transparent;
 }
 
-.dbs {
+.langs {
     border-color: #178CCC;
     color: #178CCC;
     background-color: transparent;
 }
+
+.server {
+    border-color: #A6D864;
+    color: #A6D864;
+    background-color: transparent;
+}
+
+.fw {
+    border-color: #81d4fa;
+    color: #81d4fa;
+    background-color: transparent;
+}
+
 /********************************** Projects **********************************/
 
 /********************************** About **********************************/

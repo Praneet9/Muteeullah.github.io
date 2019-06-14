@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="text/css" href="css/bootstrap-grid.css">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="css/styles.css">
 
@@ -67,10 +68,10 @@
 
             </nav>
         </header>
-
+        
         <div class="landing">
 
-            <div class="container-fluid row">
+            <div class="container-fluid row mx-auto">
 
                 <div id="landing_content" class="col-4 text-center container align-content-center align-self-center">
                     <!-- <img id="hi_img" src="assets/hi.png" alt="Hi Emoji"> -->
@@ -121,11 +122,11 @@
 
         </div>
 
-        <div class="skills">
+        <div class="skills justify-content-center">
 
-            <h1 class="font-weight-bold text-center color-light text-uppercase">Skills</h1>
+            <h1 class="font-weight-bold text-center color-light text-uppercase mt-5 pt-5">Skills</h1>
 
-            <div class="container-fluid row color-light text-center align-items-center justify-content-center">
+            <div class="container mx-auto row color-light text-center align-items-center justify-content-center">
 
                 <!-- <div class="col-4">
                     <h4>Things I know and I feel am good at!</h4>
@@ -137,60 +138,107 @@
                     </div>
                 </div> -->
 
-                <div class="card ml-4 mt-5" style="height: 40vh; width: 100%; background: transparent">
-                    <div class="row">
-                        <div class="col-4 text-right">
-                            <h4>Web Development</h4>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card text-center skills_card">
+                        <div class="card-header">
+                          Web Development
                         </div>
-                        <div class="col-8">
-                            <span class="rounded tag web" style="width: 100px;">Flask</span>
-                            <span class="rounded tag web" style="width: 150px;">J2EE</span>
-                            <span class="rounded tag web" style="width: 150px;">Django</span>
-                            <span class="rounded tag web" style="width: 150px;">Bootstrap</span>
-                            <span class="rounded tag web" style="width: 150px;">Firebase</span>
+                        <div class="card-body">
+                                <span><p class="rounded tag web">Flask</p>
+                                    <p class="rounded tag web">J2EE</p>
+                                    <p class="rounded tag web">Django</p>
+                                    <p class="rounded tag web">Bootstrap</p></span>
                         </div>
-                    </div>
-                    <hr color="#222222">
-                    <div class="row">
-                        <div class="col-4 text-right">
-                            <h4>Server Administration</h4>
-                        </div>
-                        <div class="col-8">
-                            <span class="rounded tag server" style="width: 100px;">Flask</span>
-                            <span class="rounded tag server" style="width: 150px;">J2EE</span>
-                            <span class="rounded tag server" style="width: 150px;">Django</span>
-                            <span class="rounded tag server" style="width: 150px;">Bootstrap</span>
-                            <span class="rounded tag server" style="width: 150px;">Firebase</span>
-                        </div>
-                    </div>
-                    <hr color="#222222">
-                    <div class="row">
-                        <div class="col-4 text-right">
-                            <h4>Languages</h4>
-                        </div>
-                        <div class="col-8">
-                            <span class="rounded tag langs" style="width: 100px;">Flask</span>
-                            <span class="rounded tag langs" style="width: 150px;">J2EE</span>
-                            <span class="rounded tag langs" style="width: 150px;">Django</span>
-                            <span class="rounded tag langs" style="width: 150px;">Bootstrap</span>
-                            <span class="rounded tag langs" style="width: 150px;">Firebase</span>
-                        </div>
-                    </div>
-                    <hr color="#222222">
-                    <div class="row">
-                        <div class="col-4 text-right">
-                            <h4>Databases</h4>
-                        </div>
-                        <div class="col-8">
-                            <span class="rounded tag dbs" style="width: 100px;">Flask</span>
-                            <span class="rounded tag dbs" style="width: 150px;">J2EE</span>
-                            <span class="rounded tag dbs" style="width: 150px;">Django</span>
-                            <span class="rounded tag dbs" style="width: 150px;">Bootstrap</span>
-                            <span class="rounded tag dbs" style="width: 150px;">Firebase</span>
-                        </div>
-                    </div>
-                    <hr color="#222222">
+                      </div>
+
                 </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card text-center skills_card">
+                        <div class="card-header">
+                          Server Administration
+                        </div>
+                        <div class="card-body">
+                                <span><p class="rounded tag server">Flask</p>
+                                <p class="rounded tag server">J2EE</p>
+                                <p class="rounded tag server">Django</p>
+                                <p class="rounded tag server">Bootstrap</p>
+                                <p class="rounded tag server">Firebase</p></span>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card text-center skills_card">
+                        <div class="card-header">
+                          Databases
+                        </div>
+                        <div class="card-body">
+                                <span><p class="rounded tag langs">Flask</p>
+                                <p class="rounded tag langs">J2EE</p>
+                                <p class="rounded tag langs">Django</p>
+                                <p class="rounded tag langs">Bootstrap</p>
+                                <p class="rounded tag langs">Firebase</p></span>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card text-center skills_card">
+                        <div class="card-header">
+                          Languages
+                        </div>
+                        <div class="card-body">
+                                <span><p class="rounded tag dbs">Flask</p>
+                                <p class="rounded tag dbs">J2EE</p>
+                                <p class="rounded tag dbs">Django</p>
+                                <p class="rounded tag dbs">Bootstrap</p>
+                                <p class="rounded tag dbs">Firebase</p></span>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card text-center skills_card">
+                        <div class="card-header">
+                          Frameworks
+                        </div>
+                        <div class="card-body">
+                                <span><p class="rounded tag fw">Flask</p>
+                                <p class="rounded tag fw">J2EE</p>
+                                <p class="rounded tag fw">Django</p>
+                                <p class="rounded tag fw">Bootstrap</p>
+                                <p class="rounded tag fw">Firebase</p></span>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card text-center skills_card">
+                        <div class="card-header">
+                            Miscellaneous
+                        </div>
+                        <div class="card-body">
+                                <span><p class="rounded tag misc">Flask</p>
+                                <p class="rounded tag misc">J2EE</p>
+                                <p class="rounded tag misc">Django</p>
+                                <p class="rounded tag misc">Bootstrap</p>
+                                <p class="rounded tag misc">Firebase</p></span>
+                        </div>
+                      </div>
+
+                </div>
+
 
             </div>
 
