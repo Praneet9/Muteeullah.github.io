@@ -9,15 +9,3 @@ $('#input_command').keypress(function (e) {
         $("#terminal_operations").append("<p>" + test + "</p>");
     }
 });
-$(document).ready(function () {
-    $(".demo").owlCarousel({
-        center: true,
-        items: 3,
-        // mergeFit: false,
-        margin: 0,
-        loop: true,
-        nav: true,
-        animateOut: 'fadeOut',
-        autoplay: true,
-    });
-});
