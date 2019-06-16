@@ -6,6 +6,10 @@ $('#input_command').keypress(function (e) {
     if (e.which == 10 || e.which == 13) {
         var test = $('#input_command').val()
         $('#input_command').val("")
-        $("#terminal_operations").append("<p>" + test + "</p>");
+        $("#terminal_operations").append("<p>> " + test + "</p>");
     }
+});
+
+$('#terminal').click(function () {
+    $('#input_command').focus();
 });
