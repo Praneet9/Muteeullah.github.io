@@ -6,8 +6,8 @@ $('#input_command').keypress(function (e) {
     if (e.which == 10 || e.which == 13) {
         var command = $('#input_command').val();
         $('#input_command').val("");
-        // $("#terminal_operations").append("<p class='text-info'>$ Under development, will be updated soon!</p>");
-        switch (command.toLowerCase()){
+        $("#terminal_operations").append("<p>$ "+ command + "</p>");
+        switch (command){
             case 'help':
                     $("#terminal_operations").append("<p class='text-info'>Available commands</p>");
                 $("#terminal_operations").append("<p>about : [Know about me]</p>");

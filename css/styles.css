@@ -185,25 +185,142 @@ nav li a:hover {
 
 /* Iphone 6 Plus*/
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .about_img {
+        height: 175px;
+        width: 175px;
+    }
+
+    .tag {
+        padding: 4px;
+        margin: 4px;
+        max-width: fit-content;
+        font-size: 12px;
+        float: left;
+        border: solid 1px
+    }
+
+    #hi_img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .skills_card .card-body {
+        min-height: 80px;
+    }
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 
 /* Iphone 6 Plus landscape*/
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about_img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #hi_img {
+        height: 36px;
+        width: 36px;
+    }
+}
 
 /*Medium devices (tablets, 768px and up)*/
 
 /* Amzon Kindle landscape and Ipad landscape*/
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about_img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #hi_img {
+        height: 36px;
+        width: 36px;
+    }
+}
 
 /*Large devices (desktops, 992px and up)*/
 
 /* Ipad Mini 2 */
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about_img {
+        height: 200px;
+        width: 200px;
+    }
+
+    #hi_img {
+        height: 36px;
+        width: 36px;
+    }
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
