@@ -17,6 +17,19 @@ body {
     color: #BFBFBF;
 }
 
+.link {
+    color: #17A2B8;
+}
+.link:link {
+    color: #17A2B8;
+}
+.link:visited {
+    color: #17A2B8;
+}
+.link:hover {
+    color: #17A2B8;
+}
+
 /********************************** Navbar **********************************/
 
 
@@ -96,6 +109,10 @@ nav li a:hover {
 
 #input_command:focus {
     outline: none;
+}
+
+.zsh {
+    color: #81d4fa;
 }
 
 /********************************** Landing Content **********************************/
