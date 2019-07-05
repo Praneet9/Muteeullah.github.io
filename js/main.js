@@ -35,7 +35,7 @@ $('#input_command').keypress(function (e) {
                 $("#terminal_operations").append("");
                 break;
             default:
-                $("#terminal_operations").append("<p class='text-danger'>You do not have permission: " + command + "</p>");
+                $("#terminal_operations").append("<p class='text-danger'>command not found: " + command + "</p>");
         }
         var elem = document.getElementById('terminal');
         elem.scrollTop = elem.scrollHeight;
