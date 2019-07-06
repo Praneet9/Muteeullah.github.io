@@ -1,7 +1,6 @@
 // custom js
 $('#input_command').focus();
 
-
 function project_details(project_header, project_text, link) {
     let terminal_div = document.getElementById('terminal_operations');
     var new_para = document.createElement("p");
@@ -30,7 +29,7 @@ $('#input_command').keypress(function (e) {
             case 'cat help':
                 $("#terminal_operations").append("<p class='text-info'>Available commands</p>");
                 $("#terminal_operations").append("<p>cat about : [Know about me]</p>");
-                $("#terminal_operations").append("<p>cat skills : [Get to know what I'm skilled yet]</p>");
+                $("#terminal_operations").append("<p>cat skills : [Get to know what I'm skilled at]</p>");
                 $("#terminal_operations").append("<p>cat activities : [Know more about activities I've been a part of]</p>");
                 $("#terminal_operations").append("<p>cat projects : [The projects I've worked on]</p>");
                 $("#terminal_operations").append("<p>resume : [Download my resume]</p>");
