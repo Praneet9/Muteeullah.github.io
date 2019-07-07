@@ -212,6 +212,11 @@ footer {
 /* Iphone 6 Plus*/
 
 @media (max-width: 575.98px) {
+    #terminal {
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+
     h1 {
         font-size: 26px;
     }
@@ -289,6 +294,11 @@ footer {
 /* Amzon Kindle landscape and Ipad landscape*/
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    #terminal {
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+    
     h1 {
         font-size: 26px;
     }
