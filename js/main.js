@@ -1,4 +1,14 @@
 // custom js
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        var overlay = document.getElementById("loader");
+        overlay.style.display = 'none';
+        document.getElementById("body").style.display = 'inherit';
+        document.getElementById("footer_section").style.display = 'inherit';
+    }, 3000);
+})
+
+
 $('#input_command').focus();
 
 function project_details(project_header, project_text, link) {
@@ -26,27 +36,27 @@ $('#input_command').keypress(function (e) {
         $('#input_command').val("");
         $("#terminal_operations").append("<p><span class='zsh'>->  </span> " + command + "</p>");
         switch (command.trim()) {
-            case 'cat help':
+            case 'help':
                 $("#terminal_operations").append("<p class='text-info'>Available commands</p>");
-                $("#terminal_operations").append("<p>cat about : [Know about me]</p>");
-                $("#terminal_operations").append("<p>cat skills : [Get to know what I'm skilled at]</p>");
-                $("#terminal_operations").append("<p>cat activities : [Know more about activities I've been a part of]</p>");
-                $("#terminal_operations").append("<p>cat projects : [The projects I've worked on]</p>");
+                $("#terminal_operations").append("<p>about : [Know about me]</p>");
+                $("#terminal_operations").append("<p>skills : [Get to know what I'm skilled at]</p>");
+                $("#terminal_operations").append("<p>activities : [Know more about activities I've been a part of]</p>");
+                $("#terminal_operations").append("<p>projects : [The projects I've worked on]</p>");
                 $("#terminal_operations").append("<p>resume : [Download my resume]</p>");
                 break;
-            case 'cat about':
+            case 'about':
                 $("#terminal_operations").append("<p class='text-info'>I am a Computer Science graduate, started learning as a Java Web Application Developer got interested in Managing and Deploying Application on Servers and finally paving the way to develop the interest towards the field of CyberSecurity. </p>");
                 break;
-            case 'cat activities':
+            case 'activities':
                 $("#terminal_operations").append("<p class='text-info'>I was one of the head of THE PROGRAMMERS CLUB, a community that helps other students to code. I was also a speaker at a workshop on Object Oriented Programming (JAVA) organized by the club and also a part of the Core & Technical committee that organized ERR_404 State Level Hackathon. Mostly we (me and my team) occasionally took part in Hackathons. </p>");
                 break;
-            case 'cat resume':
+            case 'resume':
                 document.getElementById("resume_link").click();
                 break;
-            case 'cat skills':
+            case 'skills':
                 $("#terminal_operations").append("<p class='text-info'>PENTESTING | SYSTEM ADMINISTRATION | WEB DEVELOPMENT</p>");
                 break;
-            case 'cat projects':
+            case 'projects':
                 var text = "A deep learning based system for disorder detection in tomato plants. Also using IoT to get sensor data from the plants."
                 project_details("Plant Monitor", text, "https://github.com/Muteeullah/Plant_Monitor");
                 text = "A service for people to report the potholes in their area. It is a telegram service bot wherein you can report the image and location of the pothole."
