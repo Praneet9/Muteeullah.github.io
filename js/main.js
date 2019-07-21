@@ -32,7 +32,7 @@ function project_details(project_header, project_text, link) {
 $('#input_command').keypress(function (e) {
     // Enter pressed?
     if (e.which == 10 || e.which == 13) {
-        var command = $('#input_command').val();
+        var command = $('#input_command').val().toLowerCase();
         $('#input_command').val("");
         $("#terminal_operations").append("<p><span class='zsh'>->  </span> " + command + "</p>");
         switch (command.trim()) {
